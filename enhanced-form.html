@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enhanced HTML5 form with accessible structure, lists, tables, and multimedia elements.">
+    <title>Enhanced Form Example</title>
+</head>
+<body>
+    <header>
+        <h1>Enhanced HTML5 Form</h1>
+        <p>Please complete this form with accurate details. Fields marked with * are required.</p>
+    </header>
+
+    <main>
+        <!-- Example List -->
+        <section>
+            <h2>Instructions</h2>
+            <ol>
+                <li>Fill in all required fields.</li>
+                <li>Ensure your email and phone number are valid.</li>
+                <li>Review your details before submitting.</li>
+            </ol>
+        </section>
+
+        <!-- Example Table -->
+        <section>
+            <h2>Available Membership Plans</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Benefits</th>
+                        <th>Monthly Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic</td>
+                        <td>Access to free resources</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>All Basic benefits + premium tutorials</td>
+                        <td>$9.99</td>
+                    </tr>
+                    <tr>
+                        <td>Pro</td>
+                        <td>All Premium benefits + 1-on-1 mentoring</td>
+                        <td>$19.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        
+        <section>
+            <h2>Welcome Video</h2>
+            <video src="welcome.mp4" controls width="400">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        
+        <section>
+            <h2>Registration Form</h2>
+            <form action="/submit" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Details</legend>
+
+                    <label for="fullname">Full Name*:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+                    <label for="email">Email Address*:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 555-555-5555"><br><br>
+
+                    <label for="dob">Date of Birth*:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="">-- Select --</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                    <label for="bio">Short Bio:</label><br>
+                    <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself..."></textarea><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+
+                    <label for="username">Username*:</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a username" required><br><br>
+
+                    <label for="password">Password*:</label>
+                    <input type="password" id="password" name="password" placeholder="Choose a strong password" required><br><br>
+
+                    <label for="memberid">Membership ID (Read-only):</label>
+                    <input type="text" id="memberid" name="memberid" value="AUTO-12345" readonly><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <p>Choose your preferred contact method:</p>
+                    <label><input type="radio" name="contact" value="email" checked> Email</label>
+                    <label><input type="radio" name="contact" value="phone"> Phone</label><br><br>
+
+                    <p>Select the topics you are interested in:</p>
+                    <label><input type="checkbox" name="topics" value="html"> HTML</label>
+                    <label><input type="checkbox" name="topics" value="css"> CSS</label>
+                    <label><input type="checkbox" name="topics" value="javascript"> JavaScript</label>
+                </fieldset>
+
+                <br>
+                <button type="submit">Submit Form</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Enhanced Form Example. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
